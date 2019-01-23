@@ -1,0 +1,16 @@
+version: '3.7'
+
+x-base-dev: &base-dev
+  restart: on-failure
+
+services:
+
+  sal-scala-sbt:
+    <<: *base-dev
+    image: sal-scala-sbt:latest
+    build:
+      context: .
+      target: sal-scala-sbt
+    volumes:
+      - ./src:/src
+      - .:/project
