@@ -8,6 +8,6 @@ libraryDependencies += "org.scalactic" %% "scalactic" % "3.0.5"
 
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.5" % "test"
 
-mainClass in (Compile, run) := Some("scf.Main")
+mainClass in (Compile, run) := Some("scf.main.Main")
 
-mainClass in (Compile, packageBin) := Some("scf.Main")
+mainClass in (Compile, packageBin) := Some("scf.main.Main")
